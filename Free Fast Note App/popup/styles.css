@@ -1,0 +1,168 @@
+
+body {
+    background-color: #FAF7F0;
+    height: auto;
+    width: 600px;
+    border-radius: 10px;
+}
+
+#main {
+    height: auto;
+    width: auto;
+    background-color: #D8D2C2;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.appNameContainer {
+    display: inline-block;
+    height: 20px;
+}
+.appNameText {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px;
+    align-items: center;
+    padding-top: 7px;
+    margin-top: 1px;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    border-right: 5px solid ;
+
+
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 3s ,
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width: 0;}
+    100% {color: rgb(90, 89, 89)}
+}
+
+
+#myButton {
+    margin: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+
+#inputTextArea {
+    min-width: 90%;
+    max-width: 98%;
+    min-height: 20px;
+    width: 560px;
+    height: 20px;
+    font-size: medium;
+}
+
+#notesDivContainer {
+    height: auto;
+    width: 98%;
+    background-color: #D8D2C2;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.note {
+    background-color: white;
+    margin: 3px;
+    width: 560px;
+    min-height: 50px;
+    min-width: 100px;
+    max-width: 570px;
+    border-color: white;
+}
+
+.noteDiv {
+    margin: 0px;
+    width: auto;
+    min-height: 50px;
+    min-width: 100px;
+    max-width: 600px;
+    display: inline-block;
+    align-items: right;
+
+}
+
+.deleteButton {
+    background-color: #B17457;
+    width: 15px;
+    height: 15px;
+    font-style:normal;
+    color: white;
+    font-size: xx-small;
+    text-align: center;
+    place-content: center;
+    padding: 0%;
+
+    position: relative;
+    bottom: 25px;
+
+
+}
+
+
+#info button{
+    height: auto;
+    width: 590px;
+    background-color: ghostwhite;
+    text-align: right;
+    font-weight: lighter;
+    color: grey;
+    padding-right: 10px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    text-align: top;
+    width: 600px;
+}
+
+
+
+.header-items:nth-child(1) {
+    width: 300px;
+    text-align: center;
+} 
+
+.header-items:nth-child(2) {
+    width: 100px;
+    text-align: center;
+} 
+
+.header-items:nth-child(3) {
+    width: 100px;
+    text-align: center;
+} 
+
+.header-items:nth-child(4) {
+    width: 100px;
+    text-align: center;
+} 
+
+#infoButton {
+    border-radius: 40%;
+    border-color: #D8D2C2;
+    border-width: 1px;
+}
+
+/*
+    Color palette:
+    
+    #4A4947 light orange
+    #FAF7F0 mid orange&brown
+    #D8D2C2 orange
+    #B17457 dark brown
+
+*/

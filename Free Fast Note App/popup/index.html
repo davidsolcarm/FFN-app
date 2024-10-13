@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=2000, initial-scale=1.0">
+    <title><u>Free Fast Note</u></title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="main">
+
+        <div id="header">
+            <div class="header-items" id="appName">
+                <div class="appNameContainer"><p class="appNameText">Free Fast Note</p></div>
+                </div>
+            <button class="header-items" id="myButton">Click me!</button>
+            <div class="header-items"> <button id="extendButton"> &lt;-&gt; </button></div>
+            <div class="header-items">Info <button id="infoButton"> ? </button></div>
+            <button id="loadButton" hidden>Cargar</button>
+            <button id="saveButton" hidden>Guardar</button>
+            <button id="clearButton" hidden>Clear</button>
+        </div>
+        <textarea id="inputTextArea" placeholder="Type your new note!"></textarea>
+        <div id="notesDivContainer"></div>
+
+    </div>
+
+    <script src="popup.js"></script>
+    
+</body>
+</html>
