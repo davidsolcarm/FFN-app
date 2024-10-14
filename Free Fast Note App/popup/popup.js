@@ -151,7 +151,7 @@ async function saveNotes() {
         notesArray.push(singleNoteToSave);
     }
 
-    chrome.storage.local.set({"notes": notesArray},function() {
+    chrome.storage.sync.set({"notes": notesArray},function() {
         if (chrome.runtime.error) {
             console.log("Runtime error.");
         }
@@ -163,7 +163,7 @@ async function saveNotes() {
 }
 
 function clearStorage() {
-    chrome.storage.local.clear( function() {
+    chrome.storage.sync.clear( function() {
         if (chrome.runtime.error) {
             console.log("Runtime error while clearing storage")
         }
@@ -172,7 +172,7 @@ function clearStorage() {
 
 async function loadNotes(){ 
 
-    chrome.storage.local.get("notes", function(data) {
+    chrome.storage.sync.get("notes", function(data) {
         addNotesToPage(data.notes)
     })
 
@@ -209,12 +209,13 @@ function showInfo() {
         "2. Click on 'Click me' button" + "\n" +
         "3. Drag the bottom right corner to resize it" + "\n" +
         "Now you are done!" + "\n\n" +
+        "The '<->' button expands your note space" + "\n\n" +
 
         "Note: Your notes will sync with your google account to be avaiable in all your devices" + "\n\n" +
 
 
-        "In case of any throuble send an email to: \n josedavidsoliscarmona+ffnapp@gmail.com" +
-        "More info in my Github Repo"
+        "If you want to contribute you can go to my github: \n davidsolcarm/FFN-app" +
+        "\n\nMore info in my Github Repo"
     )
 }
 
